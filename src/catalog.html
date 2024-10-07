@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNEAK-MART || CATALOG</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="bg-transparent fixed top-0 w-full z-50 transition-all duration-300" id="navbar">
+        <div class="flex justify-between items-center h-20 px-5 sm:px-8  md:px-10 lg:px-16 xl:px-32">
+                <div class="text-xl font-rubik text-blue-950 font-black tracking-tighter lg:text-2xl ">
+                    <a href="./index.html">SNEAK - MART</a>
+                </div>
+                <!-- Desktop Nav -->
+                <ul class="hidden text-darkBlue md:flex md:items-center md:justify-center space-x-8 lg:text-lg">
+                    <li>
+                        <a href="#" class="font-semibold hover:text-blue-500 hover:underline hover:underline-offset-[16px]">HOME</a>
+                    </li>
+                    <li>
+                        <a href="#" class="font-semibold hover:text-blue-500 hover:underline hover:underline-offset-[16px]">MENS'</a>
+                    </li>
+                    <li>
+                        <a href="#" class="font-semibold hover:text-blue-500 hover:underline hover:underline-offset-[16px]">WOMENS'</a>
+                    </li>
+                    <li>
+                        <a href="#" class="font-semibold hover:text-blue-500 hover:underline hover:underline-offset-[16px]">KIDS'</a>
+                    </li>
+                </ul>
+                <div class="flex items-center gap-2 sm:gap-6">
+                    <button class="focus:outline-none hover:text-blue-500">
+                        <i class="fa fa-shopping-cart text-lg" aria-hidden="true"></i>
+                    </button>
+                    <button class="focus:outline-none hover:text-blue-500">
+                        <i class="fa fa-user text-lg" aria-hidden="true"></i>
+                    </button>
+                    <!-- Menu Button -->
+                    <button id="menu-btn" class="md:hidden focus:outline-none hover:text-blue-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            
+        </div>
+
+        <!-- Mobile Nav -->
+        <div id="mobile-menu" class="md:hidden hidden fixed inset-0 bg-gray-300 transition-opacity duration-500 opacity-0">
+            <!-- Close Button -->
+            <button id="close-btn" class="absolute top-6 right-6 border-2 rounded-full border-black p-1 focus:outline-none hover:border-blue-500 bg- hover:text-blue-500">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </button>
+            <ul class="flex flex-col items-center py-24 px-5 text-xl font-semibold">
+                <li>
+                   <a href="#" class="block p-6 hover:text-blue-500 hover:underline hover:underline-offset-[16px]">HOME</a>  
+                </li>
+                <div class="w-full h-[1px] bg-gray-500"></div>
+                <li>
+                   <a href="#" class="block p-6 hover:text-blue-500 hover:underline hover:underline-offset-[16px]">MENS'</a>  
+                </li>
+                <div class="w-full h-[0.5px] bg-gray-500"></div>
+                <li>
+                   <a href="#" class="block p-6 hover:text-blue-500 hover:underline hover:underline-offset-[16px]">WOMENS'</a>  
+                </li>
+                <div class="w-full h-[1px] bg-gray-500"></div>
+                <li>
+                   <a href="#" class="block p-6 hover:text-blue-500 hover:underline hover:underline-offset-[16px]">KIDS'</a>  
+                </li>
+            </ul>
+            <div class="flex flex-col items-center">
+                <div class="flex flex-row gap-6 py-4">
+                    <img src="/images/facebook.svg" alt="" class="w-10 p-2 rounded-lg hover:bg-blue-500">
+                    <img src="/images/twitter-alt.svg" alt="" class="w-10 p-2 rounded-lg hover:bg-blue-500">
+                    <img src="/images/instagram.svg" alt="" class="w-10 p-2 rounded-lg hover:bg-blue-500">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNEAK-MART || HOME</title>
+    <link rel="favicon" href="/images/s-logo.png" size="32x32">
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="font-rubik">
+    <!-- Navbar -->
+    <nav class="bg-transparent fixed top-0 w-full z-50 transition-all duration-300" id="navbar">
+        <div class="flex justify-between items-center h-20 px-5 sm:px-8  md:px-10 lg:px-16 xl:px-32">
+                <div class="text-xl font-rubik text-blue-950 font-black tracking-tighter lg:text-2xl ">
+                    <a href="./index.html">SNEAK - MART</a>
+                </div>
+                <!-- Desktop Nav -->
+                <ul class="hidden text-darkBlue md:flex md:items-center md:justify-center space-x-8 lg:text-lg">
+                    <li>
+                        <a href="#" class="font-semibold hover:text-blue-500 hover:underline hover:underline-offset-[16px]">HOME</a>
+                    </li>
+                    <li>
+                        <a href="#" class="font-semibold hover:text-blue-500 hover:underline hover:underline-offset-[16px]">MENS'</a>
+                    </li>
+                    <li>
+                        <a href="#" class="font-semibold hover:text-blue-500 hover:underline hover:underline-offset-[16px]">WOMENS'</a>
+                    </li>
+                    <li>
+                        <a href="#" class="font-semibold hover:text-blue-500 hover:underline hover:underline-offset-[16px]">KIDS'</a>
+                    </li>
+                </ul>
+                <div class="flex items-center gap-2 sm:gap-6">
+                    <button class="focus:outline-none hover:text-blue-500">
+                        <i class="fa fa-shopping-cart text-lg" aria-hidden="true"></i>
+                    </button>
+                    <button class="focus:outline-none hover:text-blue-500">
+                        <i class="fa fa-user text-lg" aria-hidden="true"></i>
+                    </button>
+                    <!-- Menu Button -->
+                    <button id="menu-btn" class="md:hidden focus:outline-none hover:text-blue-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                        </svg>
+                    </button>
+                </div>
+            
+        </div>
+
+        <!-- Mobile Nav -->
+        <div id="mobile-menu" class="md:hidden hidden fixed inset-0 bg-gray-300 transition-opacity duration-500 opacity-0">
+            <!-- Close Button -->
+            <button id="close-btn" class="absolute top-6 right-6 border-2 rounded-full border-black p-1 focus:outline-none hover:border-blue-500 bg- hover:text-blue-500">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </button>
+            <ul class="flex flex-col items-center py-24 px-5 text-xl font-semibold">
+                <li>
+                   <a href="#" class="block p-6 hover:text-blue-500 hover:underline hover:underline-offset-[16px]">HOME</a>  
+                </li>
+                <div class="w-full h-[1px] bg-gray-500"></div>
+                <li>
+                   <a href="#" class="block p-6 hover:text-blue-500 hover:underline hover:underline-offset-[16px]">MENS'</a>  
+                </li>
+                <div class="w-full h-[0.5px] bg-gray-500"></div>
+                <li>
+                   <a href="#" class="block p-6 hover:text-blue-500 hover:underline hover:underline-offset-[16px]">WOMENS'</a>  
+                </li>
+                <div class="w-full h-[1px] bg-gray-500"></div>
+                <li>
+                   <a href="#" class="block p-6 hover:text-blue-500 hover:underline hover:underline-offset-[16px]">KIDS'</a>  
+                </li>
+            </ul>
+            <div class="flex flex-col items-center">
+                <div class="flex flex-row gap-6 py-4">
+                    <img src="/images/facebook.svg" alt="" class="w-10 p-2 rounded-lg hover:bg-blue-500">
+                    <img src="/images/twitter-alt.svg" alt="" class="w-10 p-2 rounded-lg hover:bg-blue-500">
+                    <img src="/images/instagram.svg" alt="" class="w-10 p-2 rounded-lg hover:bg-blue-500">
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <main class="relative w-full grid bg-gradient-to-br from-primary via-teal-50 to-secondary text-darkBlue pb-8 xs:pb-16 md:flex md:items-center md:py-20 lg:pl-8 xl:px-24 xl:gap-14">
+        <div class="flex flex-col gap-2 px-5 pt-24 items-start z-10 sm:gap-4 xs:px-8 md:pt-12">
+            <h1 class="text-4xl mt-12 font-black leading-[125%] sm:text-5xl sm:leading-[128%] lg:text-[52px] xl:text-6xl xl:leading-[130%] "><span class="relative after:w-[120%] after:h-full after:bg-white after:block after:absolute after:-z-10 after:top-0 after:-rotate-2">LET’S</span> <br/> EXPLORE <br/>
+            <span class="relative text-white after:w-[120%] after:h-full after:bg-purple-400 after:block after:absolute after:-z-10 after:top-0 after:-rotate-2">UNIQUE</span> <br/> SNEAKERS
+            </h1>
+            <p class="font-semibold sm:text-lg lg:text-xl">
+                UP T0 30% DISCOUNT OF ALL SNEAKERS.
+            </p>
+            <a href="./catalog.html">
+                <button class="flex items-center justify-center gap-3 px-8 py-3 rounded-lg mt-6 bg-white font-semibold border-none shadow-md shadow-gray-300 drop-shadow-md hover:bg-primary hover:text-white lg:px-14">CATALOG
+                <i class="fa fa-long-arrow-right text-lg" aria-hidden="true"></i>
+                </button>
+            </a>
+        </div>   
+        <!-- Right: Carousel Section -->
+        <div class="max-w-full relative mx-auto xs:px-5 xs:w-[480px] sm:w-[530px] md:min-w-[380px] md:mr-4 lg:w-[700px] lg:mr-12 lg:px-0 xl:mr-0">
+            <div id="carousel" class="relative overflow-hidden">
+                <div class="carousel-images flex flex-row transition-all ease-in-out duration-500">
+                    <img src="/images/nike.png" alt="nike" class="w-full h-auto lg:w-[700px] lg:h-[500px]">
+                    <img src="/images/new-balance.png" alt="new-balance" class="w-full h-auto lg:w-[700px] lg:h-[500px]">
+                    <img src="/images/adidas.png" alt="adidas" class="w-full h-auto lg:w-[700px] lg:h-[500px]">
+                    <img src="/images/reebok.png" alt="reebok" class="w-full h-auto lg:w-[700px] lg:h-[500px]">
+                    <img src="/images/puma.png" alt="puma" class="w-full h-auto lg:w-[700px] lg:h-[500px]">
+                </div>
+                <!-- Arrows -->
+                <button class="absolute left-0 top-1/2 transform -translate-y-1/2 text-black px-4 py-2 border-[0.5px] border-gray-400 rounded-full hover:bg-lightBlue hover:text-white" id="prev">&#10094;
+                </button>
+                <button class="absolute right-0 top-1/2 transform -translate-y-1/2 text-black px-4 py-2 border-[0.5px] border-gray-400 rounded-full hover:bg-lightBlue hover:text-white" id="next">&#10095;
+                </button>
+            </div>
+        </div>
+    </main>
+    <!-- Indicators -->
+    <div class="absolute -translate-x-[50%] -translate-y-[50%] left-[50%] flex flex-row justify-center items-center" id="indicators">
+        <img src="/images/nike-logo.png" class="w-16 h-12 p-2 xs:p-3 border-y-4 border-l-4 xs:w-24 xs:h-20 md:w-28 md:h-24 md:p-4 lg:w-36">
+        <img src="/images/new-balance-logo.png" class="w-16 h-12 p-2 xs:p-3 border-y-4 xs:w-24 xs:h-20 md:w-28 md:h-24 md:p-4 lg:w-36">
+        <img src="/images/adidas-logo.png" class="w-16 h-12 p-2 xs:p-3 border-y-4 xs:w-24 xs:h-20 md:w-28 md:h-24 md:p-4 lg:w-36">
+        <img src="/images/reebok-logo.png" class="w-16 h-12 p-2 xs:p-3 border-y-4 xs:w-24 xs:h-20 md:w-28 md:h-24 md:p-4 lg:w-36">
+        <img src="/images/puma-logo.png" class="w-16 h-12 p-2 xs:p-3 border-y-4 border-r-4 xs:w-24 xs:h-20 md:w-28 md:h-24 md:p-4 lg:w-36">
+    </div>
+        
+    <!-- ABOUT US -->
+    <section class="py-16 px-5 text-center sm:py-24 sm:px-8 md:px-10 lg:flex lg:justify-between lg:px-16 lg:py-36 lg:gap-4 xl:px-32">
+        <div class="lg:w-[450px] xl:w-[500px] lg:text-start">
+            <p class="text-3xl font-bold text-blue-950 py-5 sm:text-4xl lg:text-5xl lg:pb-12">ABOUT US</p>
+            <p class="md:text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit pariatur natus omnis accusamus saepe culpa facilis reiciendis ex accusantium ipsam dolor earum fugiat adipisci commodi possimus illum quae, optio</p>
+            <p class="py-4 md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos exercitationem quas fugit numquam odio, hic reiciendis nisi sed autem odit eum!.</p>
+            <a href="">
+                <button class="hidden lg:flex lg:items-center justify-center gap-2 my-4 py-3 px-14 rounded-lg bg-white font-semibold border-gray-400 shadow-lg shadow-gray-500 drop-shadow-lg hover:bg-blue-500 hover:text-white ml-0 xl:mt-20">
+                        FOLLOW US
+                    <i class="fa fa-long-arrow-right text-lg" aria-hidden="true"></i>
+                </button>
+            </a>
+        </div>
+        <div class="relative grid grid-cols-2 gap-[2px]">
+            <img src="/images/nike-sec.jpg" alt="" class="brightness-[.60] w-full h-48 xs:h-72 sm:h-96 lg:h-64 lg:min-w-60 xl:w-80 xl:h-72">
+            <img src="/images/adidas-sec.jpg" alt="" class="brightness-[.60] w-full h-48 xs:h-72 sm:h-96 lg:h-64 lg:min-w-60 xl:w-80 xl:h-72">
+            <img src="/images/new-balance-sec.jpg" alt="" class="brightness-[.60] w-full h-48 xs:h-72 sm:h-96 lg:h-64 lg:min-w-60 xl:w-80 xl:h-72">
+            <img src="/images/puma-sec.jpg" alt="" class="brightness-[.60] w-full h-48 xs:h-72 sm:h-96 lg:h-64 lg:min-w-60 xl:w-80 xl:h-72">
+            <div class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
+                <button class="flex items-center justify-center gap-2 py-3 px-4 rounded-lg bg-white font-semibold border-none shadow-md shadow-gray-300 drop-shadow-md hover:bg-blue-500 hover:text-white xs:px-6 lg:px-14 lg:hidden">
+                    FOLLOW US
+                  <i class="fa fa-long-arrow-right text-lg" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- OUR CATALOG SECTION -->
+    <section class="py-6 px-5 md:px-8 lg:px-10 xl:px-[100px]">
+
+        <div class="text-center px-5">
+            <p class="text-3xl font-bold text-darkBlue">NEW ARRIVALS</p>
+            <p class="py-4 md:text-lg">Check Out Our Catalog to see popular model of sneakers of your choice.</p>
+        </div>
+        
+        <section class="py-10 grid grid-cols-2 gap-x-8 gap-y-6 md:grid-cols-3">
+            <div class="grid -ml-2">
+                <a href="./catalog.html">
+                <div class="border-2 px-2 pt-4 pb-16 w-24 mx-auto xs:w-32 xs:pb-20 xs:px-4 sm:w-40 sm:px-8 md:pb-24 lg:w-48 lg:pb-32 lg:px-10 bg-gray-200">
+                    <img src="/images/nike-logo.png" alt="" class="">
+                </div>
+                <img src="/images/nike.png" alt="" class="mx-auto w-48 -mt-20 xs:w-60 xs:-mt-28 sm:w-72 sm:-mt-[120px] md:w-80 lg:w-96 lg:-mt-40">
+                </a>
+            </div>
+            <div class="grid">
+                <a href="./catalog.html">
+                <div class="border-2 px-2 pt-2 pb-16 w-24 mx-auto xs:w-32 xs:pb-20 xs:px-4 sm:w-40 sm:px-8 md:pb-24 lg:w-48 lg:pb-28 lg:px-10 bg-gray-200">
+                    <img src="/images/new-balance-logo.png" alt="" class="">
+                </div>
+                <img src="/images/new-balance.png" alt="" class="mx-auto w-48 -mt-20 xs:w-60 xs:-mt-28 sm:w-72 sm:-mt-32 md:w-80 lg:w-96 lg:-mt-40">
+                </a>
+            </div>
+            <div class="grid">
+                <a href="./catalog.html">
+                <div class="border-2 px-2 pt-2 pb-16 w-24 mx-auto xs:w-32 xs:pb-20 xs:px-4 sm:w-40 sm:px-8 lg:w-48 lg:pb-28 lg:px-10 bg-gray-200">
+                    <img src="/images/adidas-logo.png" alt="" class="">
+                </div>
+                <img src="/images/adidas.png" alt="" class="mx-auto w-48 -mt-20 xs:w-60 xs:-mt-28 sm:w-72 sm:-mt-32 md:-mt-[130px] md:w-80 lg:w-96 lg:-mt-44">
+                </a>
+            </div>
+            <div class="grid">
+                <a href="./catalog.html">
+                <div class="border-2 px-2 pt-4 pb-16 w-24 mx-auto xs:w-32 xs:pb-24 xs:px-4 sm:w-40 sm:px-8 md:pb-24 lg:w-48 lg:pb-28 lg:px-10 xl:pb-32 bg-gray-200">
+                    <img src="/images/reebok-logo.png" alt="" class="">
+                </div>
+                <img src="/images/reebok.png" alt="" class="mx-auto w-48 -mt-20 xs:w-60 xs:-mt-28 sm:w-72 sm:-mt-[124px] md:w-80 lg:w-96 lg:-mt-40 xl:-mt-44">
+                </a>
+            </div>
+            <div class="grid">
+                <a href="./catalog.html">
+                <div class="border-2 px-2 pt-2 pb-16 w-24 mx-auto xs:w-32 xs:pb-20 xs:px-4 sm:w-40 sm:px-8 md:pb-24 lg:w-48 lg:pb-28 lg:px-10 bg-gray-200">
+                    <img src="/images/puma-logo.png" alt="" class="">
+                </div>
+                <img src="/images/puma.png" alt="" class="mx-auto w-48 -mt-20 xs:w-60 xs:-mt-28 sm:w-72 sm:-mt-32 md:w-80 lg:w-96 lg:-mt-40">
+                </a>
+            </div>
+            
+            <div class="mx-auto">
+                <a href="./catalog.html">
+                <button class="flex items-center justify-center gap-2 p-3 rounded-lg mt-6 bg-white font-semibold text-sm border-none shadow-md shadow-gray-300 drop-shadow-md hover:bg-blue-500 hover:text-white xs:mt-12 lg:mt-16 lg:px-14">
+                    SEE MORE
+                    <i class="fa fa-long-arrow-right text-lg" aria-hidden="true"></i>
+                </button>
+                </a>
+            </div>
+        </section>
+
+    </section>
+
+    <!-- SECTION FOR MEN -->
+    <section class=" px-5 py-16 text-center bg-gradient-to-tl from-blue-100  via-teal-50 to-violet-100 sm:px-8 md:flex md:items-center md:gap-6 md:px-10 lg:px-16 lg:py-24 lg:gap-16 xl:px-32 xl:gap-24">
+        <div>
+            <img src="/images/men-sneakers.jpg" alt="" class="w-full h-auto lg:h-[480px] lg:w-[500px] xl:w-[600px] xl:h-[600px]">
+        </div>
+        <div class="md:w-[500px] md:text-start xl:w-[550px]">
+            <p class="text-4xl font-bold text-darkBlue py-8 md:-pt-4 sm:text-5xl lg:text-6xl"><span class="text-primary">FOR</span> MEN</p>
+            <div class="flex flex-col justify-center">
+                <p class="py-4 md:text-lg lg:py-8">Modern MEN'S Sneakers combining Advanced Technologhy with Unique Design for Maximum Fashion. <br/><br/> For sleek and sporty to bold and Fashion-forward, Our Men's Sneakers Collection has something for everyone whether you're a Sneakerhead or an Athlete or just someone who appreciates great footwear.</p>
+                <a href="./catalog.html">
+                    <button class="flex items-center justify-center gap-2 my-4 py-3 px-6 mx-auto rounded-lg bg-white font-semibold border-gray-400 shadow-lg shadow-gray-500 drop-shadow-lg hover:primary hover:text-white hover:bg-blue-500 md:ml-0 lg:px-14">
+                        SEE MORE
+                    <i class="fa fa-long-arrow-right text-lg" aria-hidden="true"></i>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION FOR WOMEN -->
+    <section class=" px-5 py-16 text-center sm:px-8 md:flex md:flex-row-reverse md:items-center md:gap-6 md:px-10 lg:px-16 lg:py-24 lg:gap-16 xl:px-32 xl:gap-24">
+        <div>
+            <img src="/images/lady-sneakers.jpg" alt="" class="w-full h-[450px] xs:h-[600px] sm:h-[700px] md:h-[450px] md:w-[500px] lg:h-[500px] xl:w-[600px] xl:h-[630px]">
+        </div>
+        <div class="md:w-[500px] md:text-start xl:w-[600px]">
+            <p class="text-4xl font-bold text-darkBlue py-8 md:-pt-4 sm:text-5xl lg:text-6xl"><span class="text-secondary">FOR</span> WOMEN</p>
+            <div>
+                <p class="py-4 md:text-lg lg:py-8">Accelerate your style wih Women's Trainers and Sneakers that perfectly suits and combines Fashion and Comfort for every day Dress and Clothing. <br/> <br/>From Casual and Sport, Comfortable to Fashion-Foward and Bold, Our Collection has something for every woman with their choice of color</p>
+                <a href="./catalog.html">
+                    <button class="flex items-center justify-center gap-2 my-4 py-3 px-6 mx-auto rounded-lg bg-white font-semibold border-gray-400 shadow-lg shadow-gray-500 drop-shadow-lg hover:bg-primary hover:text-white md:ml-0 lg:px-14 xl:">
+                     SEE MORE
+                       <i class="fa fa-long-arrow-right text-lg" aria-hidden="true"></i>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION FOR KIDS -->
+    <section class=" px-5 py-16 text-center bg-gradient-to-tl from-blue-100  via-teal-50 to-violet-100 sm:px-8 md:flex md:items-center md:gap-6 md:px-10 lg:px-16 lg:py-24 lg:gap-16 xl:px-32 xl:gap-24">
+        <div>
+            <img src="/images/kids-sneakers.jpg" alt="" class="w-full h-auto lg:h-[480px] lg:w-[500px] xl:w-[600px] xl:h-[620px]">
+        </div>
+        <div class="md:w-[500px] md:text-start xl:w-[550px]">
+            <p class="text-4xl font-bold text-darkBlue py-8 md:-pt-4 sm:text-5xl lg:text-6xl"><span class="text-primary">FOR </span>KIDS</p>
+            <div>
+                <p class="py-4 md:text-lg lg:py-8">Modern KID'S Sneakers combining Advanced Technologhy with Unique Style and Design for Maximum comfort, Style and Fashion. <br/> So, get your little ones moving with our exciting collections of kids' sneakers!. From Colorful and playful to Sporty and Cool</p>
+                <a href="./catalog.html">
+                    <button class="flex items-center justify-center gap-2 my-4 py-3 px-6 mx-auto rounded-lg bg-white font-semibold border-gray-400 shadow-lg shadow-gray-500 drop-shadow-lg hover:bg-primary hover:text-white md:ml-0 lg:px-14">
+                            SEE MORE
+                        <i class="fa fa-long-arrow-right text-lg" aria-hidden="true"></i>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-darkBlue text-white pt-12">
+        <div class="md:flex md:flex-row md:justify-between md:py-6">
+            <div class="text-xl text-center font-rubik font-black tracking-tighter md:pl-10 lg:pl-16 xl:text-2xl">
+                <a href="">
+                    SNEAK - MART
+                </a>
+            </div>
+            <div class="flex justify-between px-6 sm:px-8 md:px-1 md:gap-8 md:-mt-14 lg:gap-14 xl:gap-28">
+                <div class="py-8">
+                    <p class="py-6 font-semibold xl:text-lg">QUICK LINK</p>
+                    <div class="flex flex-col space-y-4">
+                        <a href="#" class="text-sm lg:text-base hover:text-primary hover:underline hover:underline-offset-8">Home</a>
+                        <a href="#" class="text-sm lg:text-base hover:text-primary hover:underline hover:underline-offset-8">About Us</a> 
+                        <a href="#" class="text-sm lg:text-base hover:text-primary hover:underline hover:underline-offset-8">Contact Us</a>
+                    </div>
+                </div>
+                <div class="py-8">
+                    <p class="py-6 font-semibold xl:text-lg">CATEGORY</p>
+                    <div class="flex flex-col space-y-4">
+                        <a href="#" class="text-sm lg:text-base hover:text-primary hover:underline hover:underline-offset-8">Mens'</a>
+                        <a href="#" class="text-sm lg:text-base hover:text-primary hover:underline hover:underline-offset-8">Womens'</a> 
+                        <a href="#" class="text-sm lg:text-base hover:text-primary hover:underline hover:underline-offset-8">Kids'</a>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-row justify-between gap-4 md:flex-col md:pr-4 lg:flex lg:flex-row lg:gap-8 xl:gap-14">
+                <div class="py-8 px-6 md:-mt-8 md:pr-10 lg:w-full">  
+                    <p class="font-semibold xl:text-lg">SOCIAL LINKS</p>
+                    <div class="flex flex-row gap-4 py-4">
+                        <img src="/images/facebook.svg" alt="" class="w-6">
+                        <img src="/images/twitter-alt.svg" alt="" class="w-6">
+                        <img src="/images/instagram.svg" alt="" class="w-6">
+                    </div>
+                </div>
+                <div class="flex flex-col gap-4 pr-6 py-10 w-1/2 md:w-full md:-mt-16 lg:pt-16 lg:pr-14">
+                    <input type="text" placeholder="Enter your Email.." class="p-2 text-sm xl:text-base">
+                    <button class="bg-lightBlue text-darkBlue px-4 py-2 font-semibold rounded-lg text-sm xl:text-base hover:bg-white">SUBSCRIBE</button>
+                </div>
+            </div>
+        </div>
+        <div class="text-center bg-gray-900 py-4">
+            <p class="text-xs text-gray-500">Copyright &copy; 2024 SNEAK-MART. All Right Reserved</p>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
