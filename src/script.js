@@ -1,7 +1,13 @@
+AOS.init({
+  easing: "ease-out-back",
+  duration: 1000,
+});
+
+
 // Toggle mobile menu
 const menuBtn = document.getElementById("menu-btn");
 const mobileMenu = document.getElementById("mobile-menu");
-const closeBtn = document.getElementById('close-btn')
+const closeBtn = document.getElementById("close-btn");
 
 // Toggle mobile menu when the hamburger icon is clicked
 menuBtn.addEventListener("click", () => {
@@ -33,14 +39,13 @@ window.addEventListener("scroll", () => {
   }
 });
 
-
 // Carousel
 const imageColors = {
   0: "bg-sky-500",
-  1: "bg-blue-500", 
-  2: "bg-green-500", 
-  3: "bg-red-500", 
-  4: "bg-stone-500", 
+  1: "bg-blue-500",
+  2: "bg-green-500",
+  3: "bg-red-500",
+  4: "bg-stone-500",
 };
 const carousel = document.querySelector(".carousel-images");
 const images = document.querySelectorAll(".carousel-images img");
@@ -62,10 +67,10 @@ function updateIndicators(index) {
   indicators.forEach((indicator, i) => {
     if (i === index) {
       indicator.classList.add(imageColors[index]);
-      indicator.classList.remove('bg-white');
+      indicator.classList.remove("bg-white");
     } else {
       indicator.classList.remove(imageColors[index]);
-      indicator.classList.add('bg-white');
+      indicator.classList.add("bg-white");
     }
   });
 }
