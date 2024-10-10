@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SNEAK-MART || HOME</title>
-    <link rel="icon" href="./images/s.png" type="image/png">
+    <link rel="icon" href="./images/logo.png" type="image/png">
     <link rel="stylesheet" href="./output.css">
 
     <!-- AOS ANIMATION -->
@@ -20,25 +20,38 @@
         <div class="flex justify-between items-center h-20 px-5 sm:px-8  md:px-10 lg:px-16 xl:px-32">
             <div class="">
                 <a href="./index.html">
-                    <img src="./images/logo-s.png" alt="" class="w-12 md:w-14 xl:w-16">
+                    <img src="./images/logo.png" alt="" class="w-10 md:w-12 xl:w-14">
                 </a>
             </div>
             <!-- Desktop Nav -->
-            <ul class="hidden text-darkBlue md:flex md:items-center md:justify-center space-x-8 lg:text-lg">
+            <ul class="hidden text-darkBlue font-semibold md:flex md:items-center md:justify-center space-x-8 xl:text-lg lg:gap-8">
                 <li>
-                    <a href="#" class="font-semibold hover:text-blue-500 hover:underline hover:underline-offset-[16px]">HOME</a>
+                    <a href="#" class=" hover:text-blue-500 hover:underline hover:underline-offset-[16px]">HOME</a>
+                </li>
+                <li class="dropdown relative inline-block">
+                    <a href="#" class="flex items-center gap-2 hover:text-blue-500 hover:underline hover:underline-offset-[16px]">CATEGORY
+                        <i class="fa fa-chevron-down text-sm" id="d-icon" aria-hidden="true"></i>
+                    </a>
+                    <ul class="dropdown-content absolute hidden min-w-28 z-10 py-2 text-xs text-darkBlue font-medium bg-gray-200 xl:text-sm xl:min-w-32">
+                        <li>
+                            <a href="#" class="block p-2 hover:text-blue-500 hover:underline hover:underline-offset-8">MENS'</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block p-2 hover:text-blue-500 hover:underline hover:underline-offset-8">WOMENS'</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block p-2 hover:text-blue-500 hover:underline hover:underline-offset-8">KIDS'</a>
+                        </li>
+                    </ul>
                 </li>
                 <li>
-                    <a href="#" class="font-semibold hover:text-blue-500 hover:underline hover:underline-offset-[16px]">MENS'</a>
+                    <a href="#" class=" hover:text-blue-500 hover:underline hover:underline-offset-[16px]">ABOUT US</a>
                 </li>
                 <li>
-                    <a href="#" class="font-semibold hover:text-blue-500 hover:underline hover:underline-offset-[16px]">WOMENS'</a>
-                </li>
-                <li>
-                    <a href="#" class="font-semibold hover:text-blue-500 hover:underline hover:underline-offset-[16px]">KIDS'</a>
+                    <a href="#" class=" hover:text-blue-500 hover:underline hover:underline-offset-[16px]">CONTACT</a>
                 </li>
             </ul>
-            <div class="flex items-center gap-2 sm:gap-6">
+            <div class="flex items-center gap-4 sm:gap-8">
                 <button class="focus:outline-none hover:text-blue-500">
                     <i class="fa fa-shopping-cart text-lg" aria-hidden="true"></i>
                 </button>
@@ -63,21 +76,37 @@
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
                 </svg>
             </button>
-            <ul class="flex flex-col items-center py-24 px-5 text-xl font-semibold">
+
+            <ul class="flex flex-col items-center py-24 px-5 text-sm font-semibold sm:text-base">
                 <li>
                    <a href="#" class="block p-6 hover:text-blue-500 hover:underline hover:underline-offset-[16px]">HOME</a>  
                 </li>
                 <div class="w-full h-[1px] bg-gray-500"></div>
-                <li>
-                   <a href="#" class="block p-6 hover:text-blue-500 hover:underline hover:underline-offset-[16px]">MENS'</a>  
+                <li class="">
+                    <li class="m-link flex items-center gap-3 p-6 hover:text-blue-500">
+                        <a href="#" class=" font-semibold hover:underline hover:underline-offset-[16px]">CATEGORY
+                        </a>
+                        <i class="fa fa-chevron-down" id="icon" aria-hidden="true"></i>   
+                    </li>
+                    <ul class="m-submenu hidden text-center text-xs space-y-2 pb-4 sm:text-sm">
+                        <li>
+                            <a href="#" class=" hover:text-blue-500">MENS'</a>
+                        </li>
+                        <li>
+                            <a href="#" class=" hover:text-blue-500">WOMENS'</a>
+                        </li>
+                        <li>
+                            <a href="#" class=" hover:text-blue-500">KIDS'</a>
+                        </li>
+                    </ul>
                 </li>
                 <div class="w-full h-[0.5px] bg-gray-500"></div>
                 <li>
-                   <a href="#" class="block p-6 hover:text-blue-500 hover:underline hover:underline-offset-[16px]">WOMENS'</a>  
+                   <a href="#" class="block p-6 hover:text-blue-500 hover:underline hover:underline-offset-[16px]">ABOUT US</a>  
                 </li>
                 <div class="w-full h-[1px] bg-gray-500"></div>
                 <li>
-                   <a href="#" class="block p-6 hover:text-blue-500 hover:underline hover:underline-offset-[16px]">KIDS'</a>  
+                   <a href="#" class="block p-6 hover:text-blue-500 hover:underline hover:underline-offset-[16px]">CONTACT</a>  
                 </li>
             </ul>
             <div class="flex flex-col items-center">
@@ -93,7 +122,7 @@
     <!-- HERO SECTION -->
     <main class="relative w-full grid bg-gradient-to-br from-primary via-teal-50 to-secondary text-darkBlue pb-8 xs:pb-16 md:flex md:items-center md:py-20 lg:pl-8 xl:px-24 xl:gap-14">
         <div class="flex flex-col gap-2 px-5 pt-24 items-start z-10 sm:gap-4 xs:px-6 sm:px-8 md:pt-12">
-            <h1 data-aos="zoom-in" data-aos-easing="ease-out" data-aos-delay="300" class="text-4xl mt-12 font-black leading-[125%] sm:text-5xl sm:leading-[128%] lg:text-[52px] xl:text-6xl xl:leading-[130%] "><span class="relative after:w-[120%] after:h-full after:bg-white after:block after:absolute after:-z-10 after:top-0 after:-rotate-2">LET’S</span> <br/> EXPLORE <br/>
+            <h1 data-aos="zoom-in" data-aos-easing="ease-out" data-aos-delay="300" class="text-4xl mt-12 font-black leading-[125%] sm:text-5xl sm:leading-[128%] xl:text-6xl xl:leading-[130%] "><span class="relative after:w-[120%] after:h-full after:bg-white after:block after:absolute after:-z-10 after:top-0 after:-rotate-2">LET’S</span> <br/> EXPLORE <br/>
             <span class="relative text-white after:w-[120%] after:h-full after:bg-purple-400 after:block after:absolute after:-z-10 after:top-0 after:-rotate-2">UNIQUE</span> <br/> SNEAKERS
             </h1>
             <p data-aos="zoom-in" data-aos-easing="ease-out" data-aos-delay="300" class="font-semibold sm:text-lg lg:text-xl">
@@ -125,11 +154,11 @@
     </main>
     <!-- Indicators -->
     <div class="absolute -translate-x-[50%] -translate-y-[50%] left-[50%] flex flex-row justify-center items-center" id="indicators">
-        <img src="./images/nike-logo.png" class="w-16 h-12 p-2 xs:p-3 border-y-4 border-l-4 xs:w-24 xs:h-20 md:w-28 md:h-24 md:p-4 lg:w-36">
-        <img src="./images/new-balance-logo.png" class="w-16 h-12 p-2 xs:p-3 border-y-4 xs:w-24 xs:h-20 md:w-28 md:h-24 md:p-4 lg:w-36">
+        <img src="./images/nike-logo.png" class="w-14 h-12 p-2 xs:p-3 border-y-4 border-l-4 xs:w-24 xs:h-20 md:w-28 md:h-24 md:p-4 lg:w-36">
+        <img src="./images/new-balance-logo.png" class="w-14 h-12 p-2 xs:p-3 border-y-4 xs:w-24 xs:h-20 md:w-28 md:h-24 md:p-4 lg:w-36">
         <img src="./images/adidas-logo.png" class="w-16 h-12 p-2 xs:p-3 border-y-4 xs:w-24 xs:h-20 md:w-28 md:h-24 md:p-4 lg:w-36">
-        <img src="./images/reebok-logo.png" class="w-16 h-12 p-2 xs:p-3 border-y-4 xs:w-[92px] xs:h-20 md:w-28 md:h-24 md:p-4 lg:w-36">
-        <img src="./images/puma-logo.png" class="w-16 h-12 p-2 xs:p-3 border-y-4 border-r-4 xs:w-24 xs:h-20 md:w-28 md:h-24 md:p-4 lg:w-36">
+        <img src="./images/reebok-logo.png" class="w-[50px] h-12 p-[10px] xs:p-3 border-y-4 xs:w-[92px] xs:h-20 md:w-28 md:h-24 md:p-4 lg:w-36">
+        <img src="./images/puma-logo.png" class="w-[50px] h-12 p-2 xs:p-3 border-y-4 border-r-4 xs:w-24 xs:h-20 md:w-28 md:h-24 md:p-4 lg:w-36">
     </div>
         
     <!-- ABOUT US -->
@@ -137,7 +166,7 @@
         <div data-aos="zoom-in" data-aos-delay="200" data-aos-easing="ease" class="lg:w-[450px] xl:w-[500px] lg:text-start">
             <p class="text-3xl font-bold text-blue-950 pt-6 sm:text-4xl lg:text-5xl lg:pb-12">ABOUT US</p>
             <p class="py-4 md:text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit pariatur natus omnis accusamus saepe culpa facilis reiciendis ex accusantium ipsam dolor earum fugiat adipisci commodi possimus illum quae, optio</p>
-            <p class="pb-6 md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos exercitationem quas fugit numquam odio, hic reiciendis nisi sed autem odit eum!.</p>
+            <p class="pb-10 md:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos exercitationem quas fugit numquam odio, hic reiciendis nisi sed autem odit eum!.</p>
             <a href="">
                 <button data-aos="fade-up" data-aos-easing="ease" data-aos-delay="200" class="hidden lg:flex lg:items-center justify-center gap-2 my-4 py-3 px-14 rounded-lg bg-white font-semibold border-gray-400 shadow-lg shadow-gray-500 drop-shadow-lg hover:bg-blue-500 hover:text-white ml-0 xl:mt-20">
                         FOLLOW US
@@ -283,7 +312,7 @@
         <div class="md:flex md:flex-row md:justify-between md:py-6">
             <div class="grid md:pl-10 lg:pl-16 xl:pl-32">
                 <a href="./index.html" class="mx-auto">
-                    <img src="./images/logo-s.png" alt="" class="w-12 md:w-14 xl:w-16">
+                    <img src="./images/logo.png" alt="" class="w-12 md:w-14 xl:w-14">
                 </a>
             </div>
             <div class="flex justify-between px-6 sm:px-8 md:px-1 md:gap-14 md:-mt-14 lg:gap-20 xl:gap-28">

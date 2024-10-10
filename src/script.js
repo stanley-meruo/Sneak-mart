@@ -4,12 +4,11 @@ AOS.init({
 });
 
 
-// Toggle mobile menu
+// Toggle mobile menu when the hamburger icon is clicked
 const menuBtn = document.getElementById("menu-btn");
 const mobileMenu = document.getElementById("mobile-menu");
 const closeBtn = document.getElementById("close-btn");
 
-// Toggle mobile menu when the hamburger icon is clicked
 menuBtn.addEventListener("click", () => {
   mobileMenu.classList.toggle("hidden");
   if (!mobileMenu.classList.contains("hidden")) {
@@ -19,12 +18,23 @@ menuBtn.addEventListener("click", () => {
     mobileMenu.classList.add("opacity-0");
     mobileMenu.classList.remove("opacity-100");
   }
-
   // Close mobile menu when the close icon is clicked
   closeBtn.addEventListener("click", () => {
     mobileMenu.classList.add("hidden");
   });
 });
+
+
+// Display the submenu link on the Mobile menu
+const dropdownButton = document.querySelector(".m-link");
+const dropdownMenu = document.querySelector(".m-submenu");
+const icon = document.querySelector("#icon")
+
+dropdownButton.addEventListener("click", () => {
+  dropdownMenu.classList.toggle("hidden");
+  icon.classList.toggle("rotate-180")
+});
+
 
 // Change navbar background on scroll
 const navbar = document.getElementById("navbar");
@@ -38,6 +48,7 @@ window.addEventListener("scroll", () => {
     navbar.classList.remove("bg-blue-300", "shadow-lg");
   }
 });
+
 
 // Carousel
 const imageColors = {
