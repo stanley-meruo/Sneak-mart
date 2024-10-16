@@ -53,8 +53,8 @@ window.addEventListener("scroll", () => {
 // Carousel
 const imageColors = {
   0: "bg-sky-500",
-  1: "bg-blue-500",
-  2: "bg-green-500",
+  1: "bg-green-500",
+  2: "bg-blue-500",
   3: "bg-red-500",
   4: "bg-stone-500",
 };
@@ -128,3 +128,22 @@ indicators.forEach((indicator, i) => {
 // Initialize carousel
 showImage(currentIndex);
 startAutoplay();
+
+
+// Scroll back to top Button
+ const scrollBtn = document.getElementById("scrollBtn");
+
+ // Show the button when the user scrolls down
+ window.addEventListener("scroll", () => {
+  if (window.scrollY > 200) {
+    // Adjust the scroll position threshold as needed
+    scrollBtn.classList.remove("hidden");
+  } else {
+    scrollBtn.classList.add("hidden");
+   }
+ });
+
+ // Scroll to the top when the button is clicked
+ scrollBtn.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
