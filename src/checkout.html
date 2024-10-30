@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SNEAK-MART || CATALOG</title>
+    <title>SNEAK-MART || HOME</title>
     <link rel="icon" href="./images/logo.png" type="image/png">
     <link rel="stylesheet" href="./output.css">
 
@@ -54,18 +54,13 @@
                 </li>
             </ul>
             <div class="flex items-center gap-4 text-darkBlue sm:gap-8">
-                <a href="./cart.html">
-                    <button id="cart-icon" class="relative gap-1 focus:outline-none hover:text-blue-500">
-                        <i class="fi fi-rr-shopping-bag text-xl lg:text-2xl"></i>
-                        <span id="cart-count" class="absolute -top-2 left-3 bg-primary text-white px-2 py-1 text-[9px] rounded-full">0</span>
-                    </button>
-                </a>
+                
                 <button class="focus:outline-none hover:text-primary">
-                    <i class="fi fi-rr-user text-xl lg:text-2xl"></i>
+                    <i class="fi fi-rr-user text-lg lg:text-xl"></i>
                 </button>
                 <!-- Menu Button -->
                 <button id="menu-btn" class="md:hidden focus:outline-none hover:text-blue-500">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M4 6h16M4 12h16M4 18h16"/>
                     </svg>
                 </button>
@@ -122,27 +117,72 @@
             </div>
         </div>
     </nav>
+
     
-    <!-- CATALOG SECTION -->
+    <!-- CHECKOUT SECTION-->
     <section class="px-5 py-24 sm:px-8 md:px-10 lg:px-16 xl:px-32">
-        <p class="text-2xl text-darkBlue font-semibold text-center py-6 md:py-12 lg:text-3xl">CATALOG</p>
-        <!-- Notification container -->
-        <div id="notification" class="fixed bottom-0 right-0 left-0 z-50 text-center text-xs text-white px-4 py-1.5 rounded-md shadow-lg hidden transform opacity-0 transition-all duration-300 ease-in-out">
+        <p class="text-2xl text-darkBlue font-semibold text-center py-6 md:py-12 lg:text-3xl">CHECKOUT</p>
+    
+        <!-- Cart Summary -->
+        <div id="cart-summary" class="border p-4 rounded mb-6 shadow-md sm:p-6 md:p-10">
+            <h3 class="text-lg text-center font-medium text-gray-500 mb-4">ORDER SUMMARY</h3>
+            <hr>
+            <div id="cart-items-summary" class="py-4">
+               <!-- Cart rendering here -->
+            </div>
+            <hr>
+            <p id="cart-total-summary"></p>
+            <hr>
         </div>
-        <div data-aos="fade-up" data-aos-easing="ease" data-aos-delay="300" class="filter-buttons scrollbar-hide space-x-4 my-10 text-darkBlue flex items-center justify-between gap-2 overflow-x-scroll">
-            <button class="filter-btn bg-gray-200 hover:bg-primary hover:text-white px-4 py-2 rounded shadow" data-filter="All">All</button>
-            <button class="filter-btn bg-gray-200 hover:bg-primary hover:text-white px-4 py-2 rounded shadow" data-filter="New-Balance">NewBalance</button>
-           <button class="filter-btn bg-gray-200 hover:bg-primary hover:text-white px-4 py-2 rounded shadow" data-filter="Nike">Nike</button>
-           <button class="filter-btn bg-gray-200 hover:bg-primary hover:text-white px-4 py-2 rounded shadow" data-filter="Adidas">Adidas</button>
-           <button class="filter-btn bg-gray-200 hover:bg-primary hover:text-white px-4 py-2 rounded shadow" data-filter="Reebok">Reebok</button>
-           <button class="filter-btn bg-gray-200 hover:bg-primary hover:text-white px-4 py-2 rounded shadow" data-filter="Puma">Puma</button>
+    
+        <div class="lg:flex lg:items-center lg:justify-between lg:gap-4 xl:gap-6">
+            <!-- Delivery Information -->
+            <div class="border p-4 rounded my-10 shadow-md w-full sm:p-6">
+                <h3 class="text-lg font-semibold py-2 md:text-xl">DELIVERY INFORMATION</h3>
+                <form id="delivery-form" class="grid py-6 space-y-5 lg:py-4">
+                    <div class="grid gap-5 md:flex md:justify-between md:gap-4">
+                        <input type="text" id="name" placeholder="Full Name" class="input-field border border-gray-700 rounded p-4 placeholder:text-sm w-full" required>
+                        <input type="tel" id="phone" placeholder="Phone Number" class="input-field border border-gray-700 rounded p-4 placeholder:text-sm w-full" required>
+                    </div>
+                    <input type="text" id="address" placeholder="Address" class="input-field border border-gray-700 rounded p-4 placeholder:text-sm w-full" required>
+                    <div class="grid gap-5 md:flex md:justify-between md:gap-4">
+                        <input type="text" id="city" placeholder="City" class="input-field border border-gray-700 rounded p-4 placeholder:text-sm w-full" required>
+                        <input type="text" id="postal-code" placeholder="Postal Code" class="input-field border border-gray-700 rounded p-4 placeholder:text-sm w-full" required>
+                    </div>
+                </form>
+            </div>
+            <!-- Payment Information -->
+            <div class="border p-4 mb-4 rounded shadow-md w-full sm:p-6 lg:mb-0">
+                <h3 class="text-lg font-semibold py-2 md:text-xl">PAYMENT INFORMATION</h3>
+                <form id="payment-form" class="grid py-4 space-y-5">
+                    <input type="text" id="card-name" placeholder="Name on Card" class="input-field border border-gray-700 rounded p-4 placeholder:text-sm w-full" required>
+                    <input type="number" id="card-number" placeholder="Card Number" class="input-field border border-gray-700 rounded p-4 placeholder:text-sm w-full" required>
+                    <div class="grid gap-5 md:flex md:justify-between md:gap-4">
+                        <input type="number" id="expiry" placeholder="MM/YY" class="input-field border border-gray-700 rounded p-4 placeholder:text-sm w-full" required>
+                        <input type="number" id="cvc" placeholder="CVC" class="input-field border border-gray-700 rounded p-4 placeholder:text-sm w-full" required>
+                    </div>
+                </form>
+            </div>
         </div>
-        
-        <!-- Sneakers List Container -->
-        <div id="sneaker-list" class=" grid grid-cols-2 gap-2 sm:gap-4 md:grid-cols-3 lg:grid-cols-4">
-           <!-- Sneakers will be rendered here -->
+        <span id="error-message" class="text-red-500">
+            <!-- Error message container -->
+        </span>
+    
+       <!-- Checkout Button -->
+        <div class="grid">
+            <button id="complete-checkout" class="bg-blue-500 text-white font-semibold py-3 px-6 rounded shadow-md mt-10 mx-auto hover:bg-white hover:text-darkBlue md:py-4 md:px-8 lg:px-12">COMPLETE PURCHASE</button>
         </div>
+    
+        <!-- Confirmation Overlay -->
+        <div id="confirmation-overlay" class="hidden fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+            <div class="bg-white p-6 rounded shadow-md text-center">
+               <h2 class="text-2xl font-bold mb-2">Order Confirmed!</h2>
+               <p class="mb-4">Thank you for your purchase.</p>
+               <button id="close-overlay" class="mt-4 px-4 py-2 bg-green-500 text-white rounded shadow-md">Close</button>
+            </div>
+        </div>    
     </section>
+
 
     <!-- CONTACT US -->
     <section id="contact" class="px-5 py-16 bg-[url(./images/sneakmart-bg.jpg)] bg-gray-600 bg-blend-multiply md:px-10 lg:px-16 lg:py-20 xl:px-32 xl:gap-36">
@@ -173,7 +213,6 @@
             </div>
         </div>
     </section>
-    
 
     <!-- GO TO TOP -->
     <button id="scrollBtn" class="hidden fixed bottom-0 right-0 mb-8 mr-5 px-3 pt-3 pb-2 rounded hover:bg-lightBlue hover:text-darkBlue bg-primary text-white transition duration-300 ease-in-out z-50">
@@ -198,7 +237,7 @@
                     </div>
                 </div>
                 <div class="py-8">
-                    <p class="py-6 font-semibold xl:text-lg">CATEGORY</p>
+                    <p class="py-6 font-semibold xl:text-lg">CATALOG</p>
                     <div class="flex flex-col space-y-4">
                         <a href="./catalog.html" class="text-sm lg:text-base hover:text-primary hover:underline hover:underline-offset-8">Mens'</a>
                         <a href="./catalog.html" class="text-sm lg:text-base hover:text-primary hover:underline hover:underline-offset-8">Womens'</a> 
@@ -226,7 +265,7 @@
             <p class="text-xs text-gray-500">Stanley Meruo</p>
         </div>
     </footer>
-    
-    <script src="./catalog.js"></script>
+
+    <script src="./checkout.js"></script>
 </body>
 </html>

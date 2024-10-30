@@ -1,0 +1,189 @@
+[
+  {
+    "image": "images/sneakers/Nike-AirMax270Gold.jpg",
+    "model": "NIKE AirMax270 Gold & Black Mens Sneakers",
+    "brand": "Nike",
+    "category": "Men's",
+    "price": 100,
+    "rating": "⭐⭐⭐⭐"
+  },
+  {
+    "image": "images/sneakers/Nike-AirForce1-white.jpg",
+    "model": "NIKE Air Force1 Original Sneakers White | AllSizes",
+    "brand": "Nike",
+    "category": "Unisex",
+    "price": 100,
+    "rating": "⭐⭐⭐⭐"
+  },
+  {
+    "image": "images/sneakers/Nike-AirForce1_green.jpg",
+    "model": "NIKE Air Force1 Original Sneakers Green & White",
+    "brand": "Nike",
+    "category": "Men's",
+    "price": 100,
+    "rating": "⭐⭐⭐⭐"
+  },
+  {
+    "image": "images/sneakers/Nike-AirJordan1Red.jpg",
+    "model": "NIKE Air Jordan1 Red-Valvet & White HighTop",
+    "brand": "Nike",
+    "category": "Men's",
+    "price": 100,
+    "rating": "⭐⭐⭐⭐⭐"
+  },
+  {
+    "image": "images/sneakers/Nike-Revolution7.jpg",
+    "model": "NIKE Kids Revolution 7 Original Cool White&Pink",
+    "brand": "Nike",
+    "category": "Kid's",
+    "price": 100,
+    "rating": "⭐⭐⭐⭐⭐"
+  },
+  {
+    "image": "images/sneakers/Nike-AirJordan11Retro.jpg",
+    "model": "NIKE Air Jordan11 Red&White Retro Classic",
+    "brand": "Nike",
+    "category": "Men's",
+    "price": 100,
+    "rating": "⭐⭐⭐⭐⭐"
+  },
+  {
+    "image": "images/sneakers/Nike-AirMax270Black.jpg",
+    "model": "NIKE AirMax270 Black Mens Classic Sneakers",
+    "brand": "Nike",
+    "category": "Men's",
+    "price": 100,
+    "rating": "⭐⭐⭐⭐⭐"
+  },
+  {
+    "image": "images/sneakers/Nike-ISOfly.jpg",
+    "model": "NIKE Air ISOfly White&Gray Kids Sneakers shoe ",
+    "brand": "Nike",
+    "category": "Kid's",
+    "price": 100,
+    "rating": "⭐⭐⭐⭐"
+  },
+  {
+    "image": "images/sneakers/Nike-AirJordan4Retro.jpg",
+    "model": "NIKE Air Jordan4 Retro ToneDark Original ",
+    "brand": "Nike",
+    "category": "Women's",
+    "price": 100,
+    "rating": "⭐⭐⭐⭐⭐"
+  },
+
+  {
+    "image": "images/sneakers/Adidas_Ozstral.jpg",
+    "model": "ADIDAS Ozstral Black LaceUp Original sneaker",
+    "brand": "Adidas",
+    "category": "Men's",
+    "price": 80,
+    "rating": "⭐⭐⭐⭐⭐"
+  },
+
+  {
+    "image": "images/sneakers/Reebok-UnisexClassic.jpg",
+    "model": "REEBOK UnisexClassic Trainers Red&White",
+    "brand": "Reebok",
+    "category": "Unisex",
+    "price": 100,
+    "rating": "⭐⭐⭐⭐⭐"
+  },
+  {
+    "image": "images/sneakers/Reebok-Classic_Interval96.jpg",
+    "model": "REEBOK Classic Interval 96 Women Sneaker",
+    "brand": "Reebok",
+    "category": "Women's",
+    "price": 100,
+    "rating": "⭐⭐⭐⭐⭐"
+  },
+  {
+    "image": "images/sneakers/Reebok-PreSeason94.jpg",
+    "model": "REEBOK Kids PreSeason 94 Original Sneakers",
+    "brand": "Reebok",
+    "category": "Kid's",
+    "price": 100,
+    "rating": "⭐⭐⭐⭐⭐"
+  },
+  {
+    "image": "images/sneakers/Reebok-GL1100.jpg",
+    "model": "REEBOK Original Trainers GL1100 PaleGreen",
+    "brand": "Reebok",
+    "category": "Unisex",
+    "price": 100,
+    "rating": "⭐⭐⭐⭐⭐"
+  },
+
+  {
+    "image": "images/sneakers/New-Balance_574Trainers.jpg",
+    "model": "NEW BALANCE  Unisex 574Trainers Sport Black",
+    "brand": "New-Balance",
+    "category": "Unisex",
+    "price": 100,
+    "rating": "⭐⭐⭐⭐⭐"
+  },
+  {
+    "image": "images/sneakers/New-Balance_9060MoonDaze.jpg",
+    "model": "NEW BALANCE  9060MoonDaze Sneakers Unisex",
+    "brand": "New Balance",
+    "category": "Unisex",
+    "price": 100,
+    "rating": "⭐⭐⭐⭐⭐"
+  },
+  {
+    "image": "images/sneakers/NewBalance_BB650RCL_Shoes_WhiteYellow.jpg",
+    "model": "NEW BALANCE BB650RCL Sneaker White & Yellow",
+    "brand": "New-Balance",
+    "category": "Kid's",
+    "price": 100,
+    "rating": "⭐⭐⭐⭐⭐"
+  },
+  {
+    "image": "images/sneakers/New-Balance_574TrainersKids.jpg",
+    "model": "NEW BALANCE  Kids 574Trainers Gray& Original",
+    "brand": "New-Balance",
+    "category": "Kid's",
+    "price": 100,
+    "rating": "⭐⭐⭐⭐⭐"
+  },
+  {
+    "image": "images/sneakers/New-Balance_Classic.jpg",
+    "model": "New Balance Classic Sport TrainersFFF Original",
+    "brand": "New-Balance",
+    "category": "Unisex",
+    "price": 100,
+    "rating": "⭐⭐⭐⭐⭐"
+  },
+  {
+    "image": "images/sneakers/New-Balance_MTHIMCCB-Trainers.jpg",
+    "model": "NEW BALANCE  MTHIMCCB Women HighTop Trainers",
+    "brand": "New-Balance",
+    "category": "Women's",
+    "price": 100,
+    "rating": "⭐⭐⭐⭐⭐"
+  },
+  {
+    "image": "images/sneakers/New-Balance_FreshFoamGaroe.jpg",
+    "model": "NEW BALANCE  FrashFoam Garoe Black Trainers",
+    "brand": "New-Balance",
+    "category": "Unisex",
+    "price": 100,
+    "rating": "⭐⭐⭐⭐⭐"
+  },
+  {
+    "image": "images/sneakers/New-balance-Hook&loop.jpg",
+    "model": "NEW BALANCE  Hook & Loop DarkBlue Sneakers",
+    "brand": "New-Balance",
+    "category": "Men's",
+    "price": 100,
+    "rating": "⭐⭐⭐⭐⭐"
+  },
+  {
+    "image": "images/sneakers/New-Balance-LaceUp.jpg",
+    "model": "NEW BALANCE  LaceUp Blue & White Sneakers",
+    "brand": "New Balance",
+    "category": "Unisex",
+    "price": 100,
+    "rating": "⭐⭐⭐⭐⭐"
+  }
+]

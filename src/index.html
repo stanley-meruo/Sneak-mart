@@ -10,13 +10,14 @@
     <!-- AOS ANIMATION -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script> -->
 
     <!-- FLATICON CDN -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> -->
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
 </head>
 <body class="font-rubik">
-    <!-- Navbar -->
+    <!-- NAV BAR -->
     <nav class="bg-transparent fixed top-0 w-full z-50 transition-all duration-300 xl:py-1" id="navbar">
         <div class="flex justify-between items-center px-5 py-4 sm:px-8  md:px-10 md:py-6 lg:px-16 xl:px-32">
             <div class="">
@@ -27,37 +28,39 @@
             <!-- Desktop Nav -->
             <ul class="hidden text-darkBlue font-semibold md:flex md:items-center md:justify-center space-x-8 xl:text-lg lg:gap-8">
                 <li>
-                    <a href="#" class=" hover:text-blue-500 hover:underline hover:underline-offset-[16px]">HOME</a>
+                    <a href="./index.html" class=" hover:text-primary hover:underline hover:underline-offset-[16px]">HOME</a>
                 </li>
                 <li class="dropdown relative inline-block">
-                    <a href="#" class="flex items-center gap-2 hover:text-blue-500 hover:underline hover:underline-offset-[16px]">CATEGORY
+                    <a href="#" class="flex items-center gap-2 hover:text-primary hover:underline hover:underline-offset-[16px]">CATALOG
                         <i class="fi fi-rr-angle-small-down text-lg mt-1"></i> 
                     </a>
                     <ul class="dropdown-content absolute hidden min-w-28 z-10 py-2 text-xs text-darkBlue font-medium bg-gray-100 xl:text-sm xl:min-w-32">
                         <li>
-                            <a href="./catalog.html" class="block p-2 hover:text-blue-500 hover:underline hover:underline-offset-8">MENS'</a>
+                            <a href="./catalog.html" class="block p-2 hover:text-primary hover:underline hover:underline-offset-8">MENS'</a>
                         </li>
                         <li>
-                            <a href="./catalog.html" class="block p-2 hover:text-blue-500 hover:underline hover:underline-offset-8">WOMENS'</a>
+                            <a href="./catalog.html" class="block p-2 hover:text-primary hover:underline hover:underline-offset-8">WOMENS'</a>
                         </li>
                         <li>
-                            <a href="./catalog.html" class="block p-2 hover:text-blue-500 hover:underline hover:underline-offset-8">KIDS'</a>
+                            <a href="./catalog.html" class="block p-2 hover:text-primary hover:underline hover:underline-offset-8">KIDS'</a>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <a href="#aboutUs" class=" hover:text-blue-500 hover:underline hover:underline-offset-[16px]">ABOUT US</a>
+                    <a href="#aboutUs" class=" hover:text-primary hover:underline hover:underline-offset-[16px]">ABOUT US</a>
                 </li>
                 <li>
-                    <a href="#contact" class=" hover:text-blue-500 hover:underline hover:underline-offset-[16px]">CONTACT</a>
+                    <a href="#contact" class=" hover:text-primary hover:underline hover:underline-offset-[16px]">CONTACT</a>
                 </li>
             </ul>
             <div class="flex items-center gap-4 text-darkBlue sm:gap-8">
-                <button class="text-xs flex items-center gap-1 focus:outline-none hover:text-blue-500">
-                    <i class="fi fi-rr-shopping-bag text-lg lg:text-xl"></i>
-                    Cart (0)
-                </button>
-                <button class="focus:outline-none hover:text-blue-500">
+                <a href="./cart.html">
+                    <button id="cart-icon" class="relative gap-1 focus:outline-none hover:text-blue-500">
+                        <i class="fi fi-rr-shopping-bag text-xl lg:text-2xl"></i>
+                        <span id="cart-count" class="absolute -top-2 left-3 bg-primary text-white px-2 py-1 text-[9px] rounded-full hidden">0</span>
+                    </button>
+                </a>
+                <button class="focus:outline-none hover:text-primary">
                     <i class="fi fi-rr-user text-lg lg:text-xl"></i>
                 </button>
                 <!-- Menu Button -->
@@ -80,51 +83,42 @@
             </button>
 
             <ul class="flex flex-col items-center py-24 px-5 text-sm sm:text-base">
-                <div class="flex items-center gap-12 mb-6">
-                    <button class="focus:outline-none hover:text-blue-500">
-                      <i class="fi fi-rr-user text-lg lg:text-xl"></i>
-                    </button>
-                    <button class="text-xs flex items-center gap-1 focus:outline-none hover:text-blue-500">
-                      <i class="fi fi-rr-shopping-bag text-lg lg:text-xl"></i>
-                    Cart (0)
-                    </button>
-                </div>
                 <li>
-                   <a href="#" class="block p-6 font-medium hover:text-blue-500 hover:underline hover:underline-offset-[16px]">HOME</a>  
+                   <a href="./index.html" class="block p-5 font-medium hover:text-primary hover:underline hover:underline-offset-[16px]">HOME</a>  
                 </li>
                 <div class="w-full h-[1px] bg-gray-500"></div>
                 <li class="font-medium">
-                    <li class="m-link flex items-center gap-2 p-6 hover:text-blue-500">
-                        <a href="#" class="hover:underline hover:underline-offset-[16px]">CATEGORY
+                    <li class="m-link flex items-center gap-2 p-5 hover:text-primary">
+                        <a href="#" class="hover:underline hover:underline-offset-[16px]">CATALOG
                         </a>
                         <i class="fi fi-rr-angle-small-up text-lg mt-1" id="icon"></i>  
                     </li>
                     <ul class="m-submenu hidden text-center text-xs space-y-2 pb-4 sm:text-sm">
                         <li>
-                            <a href="./catalog.html" class=" hover:text-blue-500">MENS'</a>
+                            <a href="./catalog.html" class=" hover:text-primary">MENS'</a>
                         </li>
                         <li>
-                            <a href="./catalog.html" class=" hover:text-blue-500">WOMENS'</a>
+                            <a href="./catalog.html" class=" hover:text-primary">WOMENS'</a>
                         </li>
                         <li>
-                            <a href="./catalog.html" class=" hover:text-blue-500">KIDS'</a>
+                            <a href="./catalog.html" class=" hover:text-primary">KIDS'</a>
                         </li>
                     </ul>
                 </li>
                 <div class="w-full h-[0.5px] bg-gray-500"></div>
                 <li class="font-medium">
-                   <a href="#aboutUs" class="block p-6 hover:text-blue-500 hover:underline hover:underline-offset-[16px]">ABOUT US</a>  
+                   <a href="#aboutUs" class="block p-6 hover:text-primary hover:underline hover:underline-offset-[16px]">ABOUT US</a>  
                 </li>
                 <div class="w-full h-[1px] bg-gray-500"></div>
                 <li class="font-medium">
-                   <a href="#contact" class="block p-6 hover:text-blue-500 hover:underline hover:underline-offset-[16px]">CONTACT</a>  
+                   <a href="#contact" class="block p-6 hover:text-primary hover:underline hover:underline-offset-[16px]">CONTACT</a>  
                 </li>
             </ul>
             <div class="flex flex-col items-center">
                 <div class="flex flex-row gap-6 py-4">
-                    <img src="./images/facebook.svg" alt="" class="w-10 p-2 rounded-lg hover:bg-blue-500">
-                    <img src="./images/twitter-alt.svg" alt="" class="w-10 p-2 rounded-lg hover:bg-blue-500">
-                    <img src="./images/instagram.svg" alt="" class="w-10 p-2 rounded-lg hover:bg-blue-500">
+                    <img src="./images/facebook.svg" alt="" class="w-10 p-2 rounded-lg hover:bg-primary">
+                    <img src="./images/twitter-alt.svg" alt="" class="w-10 p-2 rounded-lg hover:bg-primary">
+                    <img src="./images/instagram.svg" alt="" class="w-10 p-2 rounded-lg hover:bg-primary">
                 </div>
             </div>
         </div>
@@ -140,7 +134,7 @@
                 UP T0 20% DISCOUNT OF ALL SNEAKERS.
             </p>
             <a href="./catalog.html">
-                <button data-aos="fade-up" data-aos-easing="ease" data-aos-delay="300" class="flex justify-center gap-3 px-6 py-3 rounded-lg mt-6 bg-white font-semibold border-none shadow-md shadow-gray-300 drop-shadow-md hover:bg-primary hover:text-white lg:px-14">CATALOG
+                <button data-aos="fade-up" data-aos-easing="ease" data-aos-delay="300" class="flex justify-center gap-3 px-6 py-3 rounded mt-6 bg-white font-semibold border-gray-400 shadow-md shadow-gray-400 drop-shadow-md hover:bg-primary hover:text-white lg:px-14">CATALOG
                 <i class="fi fi-rr-arrow-right text-lg"></i>
                 </button>
             </a>
@@ -179,7 +173,7 @@
             <p class="py-4 text-sm sm:text-base lg:text-lg">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Suscipit pariatur natus omnis accusamus saepe culpa facilis reiciendis ex accusantium ipsam dolor earum fugiat adipisci commodi possimus illum quae, optio</p>
             <p class="pb-10 text-sm sm:text-base lg:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos exercitationem quas fugit numquam odio, hic reiciendis nisi sed autem odit eum!.</p>
             <a href="">
-                <button data-aos="fade-up" data-aos-easing="ease" data-aos-delay="200" class="hidden lg:flex justify-center gap-2 my-4 py-3 px-14 rounded-lg bg-white font-semibold border-gray-400 shadow-lg shadow-gray-500 drop-shadow-lg hover:bg-blue-500 hover:text-white ml-0 xl:mt-20">
+                <button data-aos="fade-up" data-aos-easing="ease" data-aos-delay="200" class="hidden lg:flex justify-center gap-2 my-4 py-3 px-14 rounded bg-white font-semibold border-gray-400 shadow-md shadow-gray-400 drop-shadow-md hover:bg-blue-500 hover:text-white ml-0 xl:mt-20">
                         FOLLOW US
                     <i class="fi fi-rr-arrow-right text-lg"></i>
                 </button>
@@ -191,7 +185,7 @@
             <img src="./images/new-balance-sec.jpg" alt="" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="brightness-[.60] w-full h-48 xs:h-72 sm:h-96 lg:h-64 lg:min-w-60 xl:w-80 xl:h-72">
             <img src="./images/puma-sec.jpg" alt="" data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="brightness-[.60] w-full h-48 xs:h-72 sm:h-96 lg:h-64 lg:min-w-60 xl:w-80 xl:h-72">
             <div class="absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]">
-                <button data-aos="fade-up" data-aos-easing="ease" data-aos-delay="200" class="flex justify-center gap-2 py-3 px-4 rounded-lg bg-white font-semibold border-none shadow-md shadow-gray-300 drop-shadow-md hover:bg-blue-500 hover:text-white xs:px-6 lg:px-14 lg:hidden">
+                <button data-aos="fade-up" data-aos-easing="ease" data-aos-delay="200" class="flex justify-center gap-2 py-3 px-4 rounded bg-white font-semibold border-gray-400 shadow-md shadow-gray-400 drop-shadow-md hover:bg-blue-500 hover:text-white xs:px-6 lg:px-14 lg:hidden">
                     FOLLOW US
                   <i class="fi fi-rr-arrow-right text-lg"></i>
                 </button>
@@ -199,7 +193,7 @@
         </div>
     </section>
 
-    <!-- OUR CATALOG SECTION -->
+    <!-- CATALOG SECTION -->
     <section class="py-6 px-5 md:px-8 lg:px-10 xl:px-[100px]">
 
         <div data-aos="zoom-in" data-aos-easing="ease" data-aos-delay="150" class="text-center px-5">
@@ -218,6 +212,14 @@
             </div>
             <div class="grid">
                 <a href="./catalog.html">
+                <div class="border-2 px-2 pt-2 pb-16 w-24 mx-auto xs:w-32 xs:pb-20 xs:px-4 sm:w-40 sm:px-8 lg:w-48 lg:pb-28 lg:px-10 bg-gray-200">
+                    <img src="./images/adidas-logo.png" alt="" class="">
+                </div>
+                </a>
+                <img src="./images/adidas.png" alt="" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="mx-auto w-48 -mt-20 xs:w-60 xs:-mt-32 sm:w-72 sm:-mt-32 md:-mt-[130px] md:w-80 lg:w-96 lg:-mt-44">
+            </div>
+            <div class="grid">
+                <a href="./catalog.html">
                 <div class="border-2 px-2 pt-2 pb-16 w-24 mx-auto xs:w-32 xs:pb-20 xs:px-4 sm:w-40 sm:px-8 md:pb-24 lg:w-48 lg:pb-28 lg:px-10 bg-gray-200">
                     <img src="./images/new-balance-logo.png" alt="" class="">
                 </div>
@@ -226,23 +228,15 @@
             </div>
             <div class="grid">
                 <a href="./catalog.html">
-                <div class="border-2 px-2 pt-2 pb-16 w-24 mx-auto xs:w-32 xs:pb-20 xs:px-4 sm:w-40 sm:px-8 lg:w-48 lg:pb-28 lg:px-10 bg-gray-200">
-                    <img src="./images/adidas-logo.png" alt="" class="">
-                </div>
-                </a>
-                <img src="./images/adidas.png" alt="" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="mx-auto w-48 -mt-20 xs:w-60 xs:-mt-28 sm:w-72 sm:-mt-32 md:-mt-[130px] md:w-80 lg:w-96 lg:-mt-44">
-            </div>
-            <div class="grid">
-                <a href="./catalog.html">
                 <div class="border-2 px-2 pt-4 pb-16 w-24 mx-auto xs:w-32 xs:pb-24 xs:px-4 sm:w-40 sm:px-8 md:pb-24 lg:w-48 lg:pb-28 lg:px-10 xl:pb-32 bg-gray-200">
                     <img src="./images/reebok-logo.png" alt="" class="">
                 </div>
                 </a>
-                <img src="./images/reebok.png" alt="" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="mx-auto w-48 -mt-20 xs:w-60 xs:-mt-28 sm:w-72 sm:-mt-[124px] md:w-80 lg:w-96 lg:-mt-40 xl:-mt-44">
+                <img src="./images/reebok.png" alt="" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000" class="mx-auto w-48 -mt-20 xs:w-60 xs:-mt-32 sm:w-72 sm:-mt-[124px] md:w-80 lg:w-96 lg:-mt-40 xl:-mt-44">
             </div>
             <div class="grid">
                 <a href="./catalog.html">
-                <div class="border-2 px-2 pt-2 pb-16 w-24 mx-auto xs:w-32 xs:pb-20 xs:px-4 sm:w-40 sm:px-8 md:pb-24 lg:w-48 lg:pb-28 lg:px-10 bg-gray-200">
+                <div class="border-2 px-2 pt-2 pb-16 w-24 mx-auto xs:w-32 xs:pb-20 xs:px-4 sm:w-40 sm:px-8 md:pb-20 lg:w-48 lg:pb-24 lg:px-10 bg-gray-200">
                     <img src="./images/puma-logo.png" alt="" class="">
                 </div>
                 </a>
@@ -251,7 +245,7 @@
             
             <div class="mx-auto">
                 <a href="./catalog.html">
-                <button data-aos="fade-up" data-aos-easing="ease" data-aos-delay="200" class="flex items-center justify-center gap-2 p-3 rounded-lg mt-6 bg-white font-semibold text-sm border-none shadow-md shadow-gray-300 drop-shadow-md hover:bg-blue-500 hover:text-white xs:mt-12 lg:mt-16 lg:px-14">
+                <button data-aos="fade-up" data-aos-easing="ease" data-aos-delay="200" class="flex items-center justify-center gap-2 p-3 rounded mt-6 bg-white font-semibold text-sm shadow-md shadow-gray-400 border-gray-400 drop-shadow-md hover:bg-blue-500 hover:text-white xs:mt-12 lg:mt-16 lg:px-14">
                     SEE MORE
                     <i class="fi fi-rr-arrow-right text-lg mt-1"></i>
                 </button>
@@ -271,7 +265,7 @@
             <div class="flex flex-col justify-center">
                 <p data-aos="zoom-in" data-aos-delay="200" data-aos-easing="ease" class="pb-4 text-sm sm:text-base lg:text-lg lg:py-8">Modern MEN'S Sneakers combining Advanced Technologhy with Unique Design for Maximum Fashion. <br/><br/> For sleek and sporty to bold and Fashion-forward, Our Men's Sneakers Collection has something for everyone whether you're a Sneakerhead or an Athlete or just someone who appreciates great footwear.</p>
                 <a href="./catalog.html">
-                    <button data-aos="fade-up" data-aos-easing="ease" data-aos-delay="200" class="flex items-center justify-center gap-2 my-4 py-3 px-6 mx-auto rounded-lg bg-white font-semibold border-gray-400 shadow-lg shadow-gray-500 drop-shadow-lg hover:primary hover:text-white hover:bg-blue-500 md:ml-0 lg:px-14">
+                    <button data-aos="fade-up" data-aos-easing="ease" data-aos-delay="200" class="flex items-center justify-center gap-2 my-4 py-3 px-6 mx-auto rounded bg-white font-semibold border-gray-400 shadow-md shadow-gray-400 drop-shadow-md hover:primary hover:text-white hover:bg-blue-500 md:ml-0 lg:px-14">
                         SEE MORE
                     <i class="fi fi-rr-arrow-right text-lg mt-1"></i>
                     </button>
@@ -290,7 +284,7 @@
             <div>
                 <p data-aos="zoom-in" data-aos-delay="200" data-aos-easing="ease" class="py-4 text-sm sm:text-base lg:text-lg lg:py-8">Accelerate your style wih Women's Trainers and Sneakers that perfectly suits and combines Fashion and Comfort for every day Dress and Clothing. <br/> <br/>From Casual and Sport, Comfortable to Fashion-Foward and Bold, Our Collection has something for every woman with their choice of color</p>
                 <a href="./catalog.html">
-                    <button data-aos="fade-up" data-aos-easing="ease" data-aos-delay="200" class="flex items-center justify-center gap-2 my-4 py-3 px-6 mx-auto rounded-lg bg-white font-semibold border-gray-400 shadow-lg shadow-gray-200 drop-shadow-lg hover:bg-primary hover:text-white md:ml-0 lg:px-14 xl:">
+                    <button data-aos="fade-up" data-aos-easing="ease" data-aos-delay="200" class="flex items-center justify-center gap-2 my-4 py-3 px-6 mx-auto rounded-md bg-white font-semibold border-gray-400 shadow-md shadow-gray-400 drop-shadow-md hover:bg-primary hover:text-white md:ml-0 lg:px-14">
                      SEE MORE
                        <i class="fi fi-rr-arrow-right text-lg mt-1"></i>
                     </button>
@@ -309,7 +303,7 @@
             <div>
                 <p data-aos="zoom-in" data-aos-delay="200" data-aos-easing="ease" class="py-4 text-sm sm:text-base lg:text-lg lg:py-8">Modern KID'S Sneakers combining Advanced Technologhy with Unique Style and Design for Maximum comfort, Style and Fashion. <br/> So, get your little ones moving with our exciting collections of kids' sneakers!. From Colorful and playful to Sporty and Cool</p>
                 <a href="./catalog.html">
-                    <button data-aos="fade-up" data-aos-easing="ease" data-aos-delay="200" class="flex items-center justify-center gap-2 my-4 py-3 px-6 mx-auto rounded-lg bg-white font-semibold border-gray-400 shadow-lg shadow-gray-200 drop-shadow-lg hover:bg-primary hover:text-white md:ml-0 lg:px-14">
+                    <button data-aos="fade-up" data-aos-easing="ease" data-aos-delay="200" class="flex items-center justify-center gap-2 my-4 py-3 px-6 mx-auto rounded bg-white font-semibold border-gray-400 shadow-md shadow-gray-400 drop-shadow-md hover:bg-primary hover:text-white md:ml-0 lg:px-14">
                             SEE MORE
                         <i class="fi fi-rr-arrow-right text-lg mt-1"></i>
                     </button>
@@ -329,18 +323,18 @@
             <div class="bg-lightBlue px-4 py-6 rounded-lg xs:p-12 lg:w-[610px] xl:w-[650px] xl:ml-24">
                 <form action="" class="space-y-4">
                     <div class="grid gap-4 md:flex md:gap-4">
-                        <input type="text" name="name" placeholder="Name" class="w-full p-4 rounded-lg focus:outline-none bg-white placeholder:text-gray-400 placeholder:text-sm">
-                        <input type="email" name="email" placeholder="Email" class="w-full p-4 rounded-lg focus:outline-none bg-white placeholder:text-gray-400 placeholder:text-sm placeholder:font-light">
+                        <input type="text" name="name" placeholder="Name" class="w-full p-4 rounded-lg focus:outline-none bg-white placeholder:text-sm">
+                        <input type="email" name="email" placeholder="Email" class="w-full p-4 rounded-lg focus:outline-none bg-white placeholder:text-sm">
                     </div>
                     <div class="grid gap-4 md:flex md:gap-2">
-                        <input type="number" name="number" placeholder="Phone-number" class="w-full p-4 rounded-lg focus:outline-none bg-white placeholder:text-gray-400 placeholder:text-sm">
-                        <input type="text" name="text" placeholder="Subject" class="w-full p-4 rounded-lg focus:outline-none bg-transparent bg-white placeholder:text-gray-400 placeholder:text-sm">
+                        <input type="number" name="number" placeholder="Phone-number" class="w-full p-4 rounded-lg focus:outline-none bg-white placeholder:text-sm">
+                        <input type="text" name="text" placeholder="Subject" class="w-full p-4 rounded-lg focus:outline-none bg-transparent bg-white placeholder:text-sm">
                     </div>
-                    <textarea id="comment" rows="4" cols="20" placeholder="Message" class="w-full p-4 rounded-lg resize-none capitalize bg-white focus:outline-none placeholder:text-gray-400 placeholder:text-sm">
+                    <textarea id="comment" rows="4" cols="20" placeholder="Message" class="w-full p-4 rounded-lg resize-none capitalize bg-white focus:outline-none placeholder:text-sm">
                     </textarea>
                 </form>
                 <div class="grid">
-                    <button class="mt-8 py-3 px-6 rounded-lg mx-auto bg-white font-semibold border-gray-400 shadow-lg shadow-gray-500 drop-shadow-lg hover:bg-primary hover:text-white">
+                    <button class="mt-8 py-3 px-6 rounded mx-auto bg-white font-semibold border-gray-400 shadow-md shadow-gray-400 drop-shadow-md hover:bg-primary hover:text-white">
                         SEND A MESSAGE
                     </button>
                 </div>
@@ -348,8 +342,9 @@
         </div>
     </section>
 
-    <button id="scrollBtn" class="hidden fixed bottom-0 right-0 mb-4 mr-5 py-2 px-3 rounded-full bg-primary hover:bg-lightBlue hover:text-darkBlue text-white border-2 border-gray-400 transition duration-300 ease-in-out z-50">
-       <i class="fi fi-rr-arrow-up md:text-xl lg:text-2xl"></i>
+    <!-- GO TO TOP -->
+    <button id="scrollBtn" class="hidden fixed bottom-0 right-0 mb-8 mr-5 px-3 pt-3 pb-2 rounded hover:bg-lightBlue hover:text-darkBlue bg-primary text-white transition duration-300 ease-in-out z-50">
+       <i class="fi fi-rr-angle-up text-xl lg:text-2xl"></i>
     </button>
 
     <!-- FOOTER -->
@@ -370,7 +365,7 @@
                     </div>
                 </div>
                 <div class="py-8">
-                    <p class="py-6 font-semibold xl:text-lg">CATEGORY</p>
+                    <p class="py-6 font-semibold xl:text-lg">CATALOG</p>
                     <div class="flex flex-col space-y-4">
                         <a href="./catalog.html" class="text-sm lg:text-base hover:text-primary hover:underline hover:underline-offset-8">Mens'</a>
                         <a href="./catalog.html" class="text-sm lg:text-base hover:text-primary hover:underline hover:underline-offset-8">Womens'</a> 
@@ -388,18 +383,17 @@
                     </div>
                 </div>
                 <div class="flex flex-col gap-4 pr-6 py-10 w-1/2 md:w-full md:-mt-16 lg:pt-16 lg:pr-14 xl:pr-28">
-                    <input type="text" placeholder="Enter your Email.." class="p-2 text-sm xl:text-base">
-                    <button class="bg-lightBlue text-darkBlue px-4 py-2 font-semibold rounded-lg text-sm xl:text-base hover:bg-white">SUBSCRIBE</button>
+                    <input type="text" placeholder="Enter your Email.." class="p-2 text-sm rounded focus:outline-none xl:text-base">
+                    <button class="bg-lightBlue text-darkBlue px-4 py-2 font-semibold rounded text-sm xl:text-base hover:bg-white">SUBSCRIBE</button>
                 </div>
             </div>
         </div>
-        <div class="text-center bg-gray-900 py-4">
+        <div class="text-center bg-gray-900 py-2">
             <p class="text-xs text-gray-500">Copyright &copy; 2024 SNEAK-MART. All Right Reserved</p>
+            <p class="text-xs text-gray-500">Stanley Meruo</p>
         </div>
     </footer>
 
-    <script src="./script.js"></script>
-    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/highlight.min.js"></script>
+    <script src="./index.js"></script>
 </body>
 </html>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SNEAK-MART || CATALOG</title>
+    <title>SNEAK-MART || CHECKOUT</title>
     <link rel="icon" href="./images/logo.png" type="image/png">
     <link rel="stylesheet" href="./output.css">
 
@@ -54,12 +54,6 @@
                 </li>
             </ul>
             <div class="flex items-center gap-4 text-darkBlue sm:gap-8">
-                <a href="./cart.html">
-                    <button id="cart-icon" class="relative gap-1 focus:outline-none hover:text-blue-500">
-                        <i class="fi fi-rr-shopping-bag text-xl lg:text-2xl"></i>
-                        <span id="cart-count" class="absolute -top-2 left-3 bg-primary text-white px-2 py-1 text-[9px] rounded-full">0</span>
-                    </button>
-                </a>
                 <button class="focus:outline-none hover:text-primary">
                     <i class="fi fi-rr-user text-xl lg:text-2xl"></i>
                 </button>
@@ -70,6 +64,7 @@
                     </svg>
                 </button>
             </div>
+            
         </div>
 
         <!-- Mobile Nav -->
@@ -83,7 +78,7 @@
 
             <ul class="flex flex-col items-center py-24 px-5 text-sm sm:text-base">
                 <li>
-                   <a href="./index.html" class="block p-5 font-medium hover:text-primary hover:underline hover:underline-offset-[16px]">HOME</a>  
+                   <a href="./index.html" class="block p-6 font-medium hover:text-primary hover:underline hover:underline-offset-[16px]">HOME</a>  
                 </li>
                 <div class="w-full h-[1px] bg-gray-500"></div>
                 <li class="font-medium">
@@ -122,28 +117,24 @@
             </div>
         </div>
     </nav>
-    
-    <!-- CATALOG SECTION -->
+
+    <!-- CART CONTAINER -->
     <section class="px-5 py-24 sm:px-8 md:px-10 lg:px-16 xl:px-32">
-        <p class="text-2xl text-darkBlue font-semibold text-center py-6 md:py-12 lg:text-3xl">CATALOG</p>
+        <p class="text-2xl text-darkBlue font-semibold text-center py-6 md:py-12 lg:text-3xl">CART SUMMARY</p>
         <!-- Notification container -->
-        <div id="notification" class="fixed bottom-0 right-0 left-0 z-50 text-center text-xs text-white px-4 py-1.5 rounded-md shadow-lg hidden transform opacity-0 transition-all duration-300 ease-in-out">
-        </div>
-        <div data-aos="fade-up" data-aos-easing="ease" data-aos-delay="300" class="filter-buttons scrollbar-hide space-x-4 my-10 text-darkBlue flex items-center justify-between gap-2 overflow-x-scroll">
-            <button class="filter-btn bg-gray-200 hover:bg-primary hover:text-white px-4 py-2 rounded shadow" data-filter="All">All</button>
-            <button class="filter-btn bg-gray-200 hover:bg-primary hover:text-white px-4 py-2 rounded shadow" data-filter="New-Balance">NewBalance</button>
-           <button class="filter-btn bg-gray-200 hover:bg-primary hover:text-white px-4 py-2 rounded shadow" data-filter="Nike">Nike</button>
-           <button class="filter-btn bg-gray-200 hover:bg-primary hover:text-white px-4 py-2 rounded shadow" data-filter="Adidas">Adidas</button>
-           <button class="filter-btn bg-gray-200 hover:bg-primary hover:text-white px-4 py-2 rounded shadow" data-filter="Reebok">Reebok</button>
-           <button class="filter-btn bg-gray-200 hover:bg-primary hover:text-white px-4 py-2 rounded shadow" data-filter="Puma">Puma</button>
+        <div id="notification" class="fixed bottom-0 right-0 left-0 z-50 text-center text-xs text-white px-4 py-1.5 rounded shadow hidden transform opacity-0 transition-all duration-300 ease-in-out">
         </div>
         
-        <!-- Sneakers List Container -->
-        <div id="sneaker-list" class=" grid grid-cols-2 gap-2 sm:gap-4 md:grid-cols-3 lg:grid-cols-4">
-           <!-- Sneakers will be rendered here -->
+        <div class="grid gap-4">
+            <div id="cart-items" class="lg:grid lg:grid-cols-2 lg:gap-4">
+                <!-- Cart details -->
+            </div>
+            <a href="./checkout.html">
+                <div id="cart-total" class="grid">CHECKOUT</div>
+            </a>
         </div>
     </section>
-
+    
     <!-- CONTACT US -->
     <section id="contact" class="px-5 py-16 bg-[url(./images/sneakmart-bg.jpg)] bg-gray-600 bg-blend-multiply md:px-10 lg:px-16 lg:py-20 xl:px-32 xl:gap-36">
         <div data-aos="zoom-in" data-aos-delay="200" data-aos-easing="ease" class="lg:flex lg:items-center lg:gap-16">
@@ -155,25 +146,24 @@
             <div class="bg-lightBlue px-4 py-6 rounded-lg xs:p-12 lg:w-[610px] xl:w-[650px] xl:ml-24">
                 <form action="" class="space-y-4">
                     <div class="grid gap-4 md:flex md:gap-4">
-                        <input type="text" name="name" placeholder="Name" class="w-full p-4 rounded focus:outline-none bg-white placeholder:text-sm">
-                        <input type="email" name="email" placeholder="Email" class="w-full p-4 rounded focus:outline-none bg-white placeholder:text-sm">
+                        <input type="text" name="name" placeholder="Name" class="w-full p-4 rounded-lg focus:outline-none bg-white placeholder:text-sm">
+                        <input type="email" name="email" placeholder="Email" class="w-full p-4 rounded-lg focus:outline-none bg-white placeholder:text-sm">
                     </div>
                     <div class="grid gap-4 md:flex md:gap-2">
-                        <input type="number" name="number" placeholder="Phone-number" class="w-full p-4 rounded focus:outline-none bg-white placeholder:text-sm">
-                        <input type="text" name="text" placeholder="Subject" class="w-full p-4 rounded focus:outline-none bg-transparent bg-white placeholder:text-sm">
+                        <input type="number" name="number" placeholder="Phone-number" class="w-full p-4 rounded-lg focus:outline-none bg-white placeholder:text-sm">
+                        <input type="text" name="text" placeholder="Subject" class="w-full p-4 rounded-lg focus:outline-none bg-transparent bg-white placeholder:text-sm">
                     </div>
-                    <textarea id="comment" rows="4" cols="20" placeholder="Message" class="w-full p-4 rounded resize-none capitalize bg-white focus:outline-none placeholder:text-sm">
+                    <textarea id="comment" rows="4" cols="20" placeholder="Message" class="w-full p-4 rounded-lg resize-none capitalize bg-white focus:outline-none placeholder:text-sm">
                     </textarea>
                 </form>
                 <div class="grid">
-                    <button class="mt-8 py-3 px-6 rounded-lg mx-auto bg-white font-semibold border-gray-400 shadow-md shadow-gray-400 drop-shadow-md hover:bg-primary hover:text-white">
+                    <button class="mt-8 py-3 px-6 rounded-lg mx-auto bg-white font-semibold border-gray-400 shadow-lg shadow-gray-500 drop-shadow-lg hover:bg-primary hover:text-white">
                         SEND A MESSAGE
                     </button>
                 </div>
             </div>
         </div>
     </section>
-    
 
     <!-- GO TO TOP -->
     <button id="scrollBtn" class="hidden fixed bottom-0 right-0 mb-8 mr-5 px-3 pt-3 pb-2 rounded hover:bg-lightBlue hover:text-darkBlue bg-primary text-white transition duration-300 ease-in-out z-50">
@@ -226,7 +216,7 @@
             <p class="text-xs text-gray-500">Stanley Meruo</p>
         </div>
     </footer>
-    
-    <script src="./catalog.js"></script>
+
+    <script src="./cart.js"></script>
 </body>
 </html>

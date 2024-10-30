@@ -1,3 +1,4 @@
+// Animation on scroll
 AOS.init({
   easing: "ease-out-back",
   duration: 1000,
@@ -131,7 +132,7 @@ startAutoplay();
 
 
 // Scroll back to top Button
- const scrollBtn = document.getElementById("scrollBtn");
+const scrollBtn = document.getElementById("scrollBtn");
 
  // Show the button when the user scrolls down
  window.addEventListener("scroll", () => {
@@ -147,3 +148,38 @@ startAutoplay();
  scrollBtn.addEventListener("click", () => {
   window.scrollTo({ top: 0, behavior: "smooth" });
 });
+
+
+
+
+// Function to update the cart count in the icon
+function updateCartCount() {
+  const cartCount = document.getElementById("cart-count");
+  const totalItems = cart.reduce((acc, item) => acc + item.quantity, 0);
+
+  if (totalItems > 0) {
+    cartCount.textContent = totalItems;
+    cartCount.classList.remove("hidden");
+  } else {
+    cartCount.classList.add("hidden");
+  }
+}
+
+// Save the cart to localStorage
+function saveCartToLocalStorage() {
+  localStorage.setItem("cart", JSON.stringify(cart));
+}
+
+// Load the cart from localStorage
+function loadCartFromLocalStorage() {
+  const storedCart = JSON.parse(localStorage.getItem("cart"));
+  if (Array.isArray(storedCart)) {
+    cart = storedCart;
+  } else {
+    cart = [];
+  }
+  updateCartCount();
+}
+
+// Load cart when the page loads
+loadCartFromLocalStorage();
