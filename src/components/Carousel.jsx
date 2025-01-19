@@ -5,38 +5,38 @@ const Carousel = () => {
   const slides = [
     {
       id: 1,
-      image: "src/assets/nike.png",
+      image: "/src/assets/nike.png",
       title: "NIKE",
       color: "bg-blue-500",
-      logo: "src/assets/nike-logo.png",
+      logo: "/src/assets/nike-logo.png",
     },
     {
       id: 2,
-      image: "src/assets/adidas.png",
+      image: "/src/assets/adidas.png",
       title: "ADIDAS",
       color: "bg-green-500",
-      logo: "src/assets/adidas-logo.png",
+      logo: "/src/assets/adidas-logo.png",
     },
     {
       id: 3,
       image: "src/assets/puma.png",
       title: "PUMA",
       color: "bg-purple-500",
-      logo: "src/assets/puma-logo.png",
+      logo: "/src/assets/puma-logo.png",
     },
     {
       id: 4,
       image: "src/assets/new-balance.png",
       title: "NEW-BALANCE",
       color: "bg-blue-700",
-      logo: "src/assets/new-balance-logo.png",
+      logo: "/src/assets/new-balance-logo.png",
     },
     {
       id: 5,
       image: "src/assets/reebok.png",
       title: "REEBOK",
       color: "bg-red-500",
-      logo: "src/assets/reebok-logo.png",
+      logo: "/src/assets/reebok-logo.png",
     },
   ];
 
