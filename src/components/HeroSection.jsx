@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import Carousel from "./Carousel";
-import Button from "./Button";
+import Carousel from "../Carousel";
+import Button from "../Button";
 import { Link } from "react-router-dom";
 
 
