@@ -3,6 +3,9 @@ import {
   getAuth,
   GoogleAuthProvider,
   FacebookAuthProvider,
+  browserLocalPersistence,
+  setPersistence,
+  browserSessionPersistence,
 } from "firebase/auth";
 
 const firebaseConfig = {
@@ -19,5 +22,13 @@ const auth = getAuth(app);
 
 const googleProvider = new GoogleAuthProvider();
 const facebookProvider = new FacebookAuthProvider();
+
+setPersistence(auth, browserLocalPersistence, browserSessionPersistence)
+  .then(() => {
+    console.log("Persistence set to local storage");
+  })
+  .catch((error) => {
+    console.error("Error setting persistence:", error);
+  });
 
 export { auth, googleProvider, facebookProvider };
